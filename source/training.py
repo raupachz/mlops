@@ -44,7 +44,7 @@ estimator = PyTorch(
     # instance_type="ml.m4.xlarge",
     py_version="py3",
     use_spot_instances=False,  # Use a spot instance
-    hyperparameters={"epochs": 20, ":1backend": "gloo"},
+    hyperparameters={"epochs": 20, "backend": "gloo"},
 )
 
 print(f"Training job name: {job_name}")
